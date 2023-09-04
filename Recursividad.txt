@@ -1,0 +1,23 @@
+public class Recursividad {
+    
+    int base = 4;
+    int exponente = 2;
+    int result;
+
+    
+    public void codRecur (){
+        
+        result = (base * (base - 1) + base);
+        System.out.println("Recursividad de potencia cuando la base es 4 y el exponente es 2: " + result);
+        // 4 + 4 + 4 + 4
+        //  base * base - 1 + base
+        //  4 * 4-1 + 4 
+    }
+    
+    public static void main(String[] args) {
+        
+        Recursividad r = new Recursividad();
+        r.codRecur();
+        
+    }
+}
